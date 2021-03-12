@@ -11,7 +11,7 @@ defmodule MikuPhoenixWeb.PageController do
   end
 
   def api(conn, _params) do
-    json(conn, %{username: getRandomMiku()})
+    json(conn, %{username: "https://plushmiku.xyz" <> getRandomMiku()})
   end
 
   def fakedashboard(conn, _params) do
